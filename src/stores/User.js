@@ -5,7 +5,15 @@ export const user = createSlice({
   initialState: {
     user: {
       name: "user",
+      surname: "surname",
       email: "mail",
+      phone: "phone",
+      gender: "",
+      weight: 0,
+      height: 0,
+      age: 0,
+      diseases: "",
+      goals: "",
     },
 
     isLogged: true,
