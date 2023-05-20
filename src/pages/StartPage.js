@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/Header";
 
 const StartPage = () => {
+  const [page, setPage] = useState("");
   return (
     <div className="flex-col">
-      <Header />
+      <Header page={page} setPage={setPage} />
       <div className="p-1 overflow-y-scroll scrollbar-hide">
-        <p className="text-justify">sdfgsfdsfsddsf</p>
+        {page === "login" ? (
+          <div>loginpage</div>
+        ) : page === "register" ? (
+          <div>registerpage</div>
+        ) : (
+          <div>asndkljasdk</div>
+        )}
       </div>
     </div>
   );
