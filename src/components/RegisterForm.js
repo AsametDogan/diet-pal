@@ -1,6 +1,10 @@
 import React from "react";
+import { setLoggedIn } from "../stores/User";
+import { useDispatch } from "react-redux";
 
 const RegisterForm = () => {
+  
+  const dispatch = useDispatch(); // to using react redux
   return (
     <div className="bg-white w-full p-10 flex items-center justify-center  border-gray-200">
       <div className="w-full lg:w-2/3 overflow-y-scroll scrollbar-hide">
@@ -58,7 +62,9 @@ const RegisterForm = () => {
             </button>
           </div>
           <div className="mt-8 flex flex-col gap-y-4">
-            <button className="active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all  py-3 rounded-xl  bg-indigo-300 text-white text-base font-bold">
+            <button onClick={()=>{
+              dispatch(setLoggedIn())
+            }} className="active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all  py-3 rounded-xl  bg-indigo-300 text-white text-base font-bold">
               {" "}
               Kayıt Ol{" "}
             </button>
