@@ -1,13 +1,20 @@
 import React from "react";
 import { IconLogo } from "../media";
+import { setLoggedIn } from "../stores/User";
+import { useDispatch } from "react-redux";
 
 const Header = ({ page, setPage }) => {
+    
+  const dispatch = useDispatch(); // to using react redux
   return (
+    
     <div className="w-full flex px-4 py-3 bg-orange-50 shadow justify-between items-center gap-1">
       <div className="flex gap-1 items-center">
         <div
           onClick={() => {
             setPage("");
+            
+          dispatch(setLoggedIn());
           }}
           className="rounded-full cursor-pointer bg-gray-200 p-1"
         >

@@ -16,7 +16,7 @@ export const user = createSlice({
       goals: "",
     },
 
-    isLogged: true,
+    isLogged: false,
   },
   reducers: {
     login: (state, action) => {

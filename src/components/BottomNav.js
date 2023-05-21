@@ -19,7 +19,9 @@ const BottomNav = () => {
         onClick={() => {
           dispatch(setPage("home"));
         }}
-        className={`p-2 rounded-full ${page === "home" ? "bg-indigo-100" : ""}`}
+        className={`p-2 border rounded-full ${
+          page === "home" ? "bg-white border-gray-600" : ""
+        }`}
         id="home"
       >
         <img className="h-6 w-6" src={IconHome} />
@@ -28,8 +30,8 @@ const BottomNav = () => {
         onClick={() => {
           dispatch(setPage("buddy"));
         }}
-        className={`p-2 rounded-full ${
-          page === "buddy" ? "bg-indigo-100" : ""
+        className={`p-2 border rounded-full ${
+          page === "buddy" ? "bg-white border-gray-600": ""
         }`}
         id="buddy"
       >
@@ -39,7 +41,9 @@ const BottomNav = () => {
         onClick={() => {
           dispatch(setPage("recipe"));
         }}
-        className={`p-2 rounded-full ${page === "recipe" ? "bg-indigo-100" : ""}`}
+        className={`p-2 border rounded-full ${
+          page === "recipe" ? "bg-white border-gray-600" : ""
+        }`}
         id="recipe"
       >
         <img className="h-7 w-7" src={IconRecipe} />
@@ -48,7 +52,9 @@ const BottomNav = () => {
         onClick={() => {
           dispatch(setPage("calori"));
         }}
-        className={`p-2 rounded-full ${page === "calori" ? "bg-indigo-100" : ""}`}
+        className={`p-2 border rounded-full ${
+          page === "calori" ? "bg-white border-gray-600" : ""
+        }`}
         id="calori"
       >
         <img className="h-7 w-7" src={IconCalori} />
@@ -57,7 +63,9 @@ const BottomNav = () => {
         onClick={() => {
           dispatch(setPage("profile"));
         }}
-        className={`p-2 rounded-full outline-none ${page === "profile" ? "bg-indigo-100" : ""}`}
+        className={`p-2 border rounded-full outline-none ${
+          page === "profile" ? "bg-white border-gray-600" : ""
+        }`}
         id="profile"
       >
         <img className="h-6 w-6" src={IconUser} />

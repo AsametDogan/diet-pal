@@ -11,14 +11,24 @@ import IconSwim from "./swim.png";
 import IconFoot from "./walkFoot.png";
 import IconHDUser from "./userhd.png";
 import IconPSM from "./psm.jpg";
+import IconPSM2 from "./pp1.jpg";
+import IconYoga from "./yoga.png";
+import IconPSM3 from "./pp2.jpg";
+import IconSend from "./send.png";
+import GifStart from "./startGif.gif";
 
 export {
   IconHome,
   IconLogo,
   IconFoot,
+  GifStart,
+  IconSend,
+  IconPSM2,
   IconPSM,
+  IconPSM3,
   IconBuddy,
   IconHDUser,
+  IconYoga,
   IconRecipe,
   IconCalori,
   IconUser,
