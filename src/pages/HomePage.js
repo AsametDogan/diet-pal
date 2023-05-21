@@ -4,7 +4,7 @@ import {
   CircularProgressbarWithChildren,
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import { IconFoot } from "../media";
+import { IconDaily, IconFoot, IconYoga } from "../media";
 const HomePage = () => {
   const [water, setWater] = useState(0);
   const [waterPercent, setWaterPercent] = useState(0);
@@ -43,20 +43,32 @@ const HomePage = () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-wrap">
-        <div
-          className={`flex flex-col items-center justify-between p-4 border bg-indigo-100 rounded-lg gap-3 shadow-lg  `}
-        >
-          <div className=" w-full flex justify-between">
-            <p className="">Adım</p> <img className="h-6 w-6" src={IconFoot} />
+      <div className="flex flex-row gap-2 justify-around">
+        <div className="flex flex-col gap-4 ">
+          <div
+            className={`flex flex-col items-center justify-between p-4 border bg-indigo-100 rounded-lg gap-3 shadow-lg  `}
+          >
+            <div className=" w-full flex justify-between">
+              <p className="font-semibold">Adım</p>{" "}
+              <img className="h-6 w-6" src={IconFoot} />
+            </div>
+            <div className="h-20 w-20 ">
+              <CircularProgressbarWithChildren value={66}>
+                <div className="text-xs items-center flex flex-col">
+                  <p>6688</p> steps
+                </div>
+              </CircularProgressbarWithChildren>
+            </div>
           </div>
-          <div className="h-20 w-20 ">
-            <CircularProgressbarWithChildren value={66}>
-              <div className="text-xs items-center flex flex-col">
-                <p>6688</p> steps
-              </div>
-            </CircularProgressbarWithChildren>
+          <div className=" flex flex-col items-center bg-deep-orange-100 rounded-lg shadow-lg p-1">
+            <img className="h-24" src={IconYoga} />
+            <label className="font-semibold">Meditasyon</label>
+            <label>35'</label>
           </div>
+        </div>
+
+        <div className="w-52 shadow-lg">
+          <img className="rounded-lg" src={IconDaily} />
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { IconLogo } from "../media";
+import { IconLogo, IconLogoDP } from "../media";
 import { setLoggedIn } from "../stores/User";
 import { useDispatch } from "react-redux";
 
@@ -18,7 +18,7 @@ const Header = ({ page, setPage }) => {
           }}
           className="rounded-full cursor-pointer bg-gray-200 p-1"
         >
-          <img className="h-7 w-7" src={IconLogo} />
+          <img className="h-8 w-8 rounded-full" src={IconLogoDP} />
         </div>
         <p className="font-semibold">Diet Pal</p>
       </div>

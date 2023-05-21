@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import RegisterForm from "../components/RegisterForm";
 import Login from "../components/Login";
-import { GifStart } from "../media";
+import { GifStart, IconAk, IconAk1, IconAk2, IconT1, IconT2 } from "../media";
 
 const StartPage = () => {
   const [page, setPage] = useState("");
@@ -27,7 +27,13 @@ const StartPage = () => {
             </div>
           </div>
         ) : (
-          <div>asndkljasdk</div>
+          <div className="flex flex-col gap-3 px-2 overflow-y-scroll scrollbar-hide ">
+            <img className="shadow-lg rounded-lg" src={IconT1} />
+            <img className="shadow-lg rounded-lg" src={IconT2} />
+            <img className="shadow-lg rounded-lg" src={IconAk} />
+            <img className="shadow-lg rounded-lg" src={IconAk1} />
+            <img className="shadow-lg rounded-lg" src={IconAk2} />
+          </div>
         )}
       </div>
     </div>

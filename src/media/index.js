@@ -16,12 +16,28 @@ import IconYoga from "./yoga.png";
 import IconPSM3 from "./pp2.jpg";
 import IconSend from "./send.png";
 import GifStart from "./startGif.gif";
+import IconLogoDP from "./logodp.jpeg";
+import IconDaily from "./gunluk.png";
+import IconT1 from "./t1.png";
+import IconT2 from "./t2.png";
+import IconLoupe from "./loupe.png";
+import IconAk from "./ak.png";
+import IconAk1 from "./ak1.png";
+import IconAk2 from "./ak2.png";
 
 export {
   IconHome,
+  IconDaily,
+  IconLogoDP,
   IconLogo,
+  IconAk,
+  IconT1,
+  IconT2,
+  IconLoupe,
   IconFoot,
   GifStart,
+  IconAk1,
+  IconAk2,
   IconSend,
   IconPSM2,
   IconPSM,

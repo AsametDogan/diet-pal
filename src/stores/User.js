@@ -4,10 +4,10 @@ export const user = createSlice({
   name: "user",
   initialState: {
     user: {
-      name: "user",
-      surname: "surname",
-      email: "mail",
-      phone: "phone",
+      name: "Ebru Nur",
+      surname: "Uslu",
+      email: "ebruebg@gmail.com",
+      phone: "05070268105",
       gender: "",
       weight: 0,
       height: 0,
